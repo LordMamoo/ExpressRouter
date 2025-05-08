@@ -8,7 +8,7 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-    res.send('<h1>Home There</h1>');
+    res.send('<h1>Test Page</h1>');
 });
 
 app.get('/students/:id', (req, res) => {
