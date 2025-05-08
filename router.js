@@ -1,5 +1,4 @@
 const express = require('express');
-const fs = require('fs')
 const app = express();
 
 const port = process.env.PORT || 3000;
@@ -9,10 +8,10 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-    res.send('<header><h1>Home</h1><h2></header>');
+    res.send('<h1>Home Page</h1>');
 });
 
-app.get('/packers/:id', (req, res) => {
+app.get('/students/:id', (req, res) => {
     const id = req.params.id;
     res.send(`This is the Packer path ${id}`);
 });
